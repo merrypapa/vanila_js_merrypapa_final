@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Waymaker</title>
+  </head>
+  <body>
+    <div class="leftBox">
+      <div class="userInfo">
+        <form class="userInfoForm">
+          <div class="usernameBox">
+            <label for="username">Username: </label>
+            <input
+              type="text"
+              class="inUsername"
+              id="username"
+              placeholder="What is your name?"
+            />
+          </div>
+          <div class="babyDueBox">
+            <label for="babyBirth">Baby Birth: </label>
+            <input type="date" class="inBabyBirth" id="babyBirth" />
+          </div>
+          <div class="infoSubmit">
+            <input type="submit" />
+          </div>
+        </form>
+        <h2 class="greeting"></h2>
+        <h4 class="babyDue"></h4>
+      </div>
+      <div class="timeInfo">
+        <div class="local">
+          <h3 class="regionTitle">Local</h3>
+          <h4 class="localTime">00:00</h4>
+          <h4 class="localWeather"></h4>
+        </div>
+        <div class="usEast">
+          <h3 class="regionTitle">US East</h3>
+          <h4 class="usEastTime">00:00</h4>
+        </div>
+        <div class="krSeoul">
+          <h3 class="regionTitle">KR Seoul</h3>
+          <h4 class="krSeoulTime">00:00</h4>
+        </div>
+      </div>
+    </div>
+    <div class="centerBox">
+      <!-- <div class="todayWord">
+        <span>Today's word</span>
+      </div> -->
+    </div>
+    <div class="rightBox">
+      <div class="toDoInfo">
+        <h3>Todo Info</h3>
+        <form class="toDoInfoForm">
+          <div class="toDoBox">
+            <label for="toDoTitle">Title: </label>
+            <input
+              type="text"
+              class="toDoTitle"
+              id="toDoTitle"
+              placeholder="Write a to do"
+              required
+            />
+          </div>
+          <div class="toDoDueBox">
+            <label for="toDoDue">Due: </label>
+            <input type="date" class="toDoDue" id="toDoDue" required />
+          </div>
+          <div class="toDoSubmit">
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+      <div class="toDoListBox">
+        <h3>To-Dos</h3>
+        <ul class="toDoList"></ul>
+      </div>
+    </div>
+    <script src="bg.js"></script>
+    <script src="userinfo.js"></script>
+    <script src="todoinfo.js"></script>
+    <script src="clock.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
